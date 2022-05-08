@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="40dp"
+    android:paddingEnd="40dp"
+    android:id="@+id/parentRelative"
+    tools:context=".view.activity.SignupActivity">
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:alpha="0"
+            android:src="@drawable/instagram_tories" />
+
+        <TextView
+            android:id="@+id/signupText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_signup_page"
+            android:alpha="0"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <com.example.storryapp.view.costumview.NameEditText
+            android:id="@+id/et_name"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0"
+            android:hint="@string/input_name"
+            android:textSize="15dp"
+            android:inputType="text"/>
+
+        <com.example.storryapp.view.costumview.EmailEditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:alpha="0"
+            android:hint="@string/input_email"
+            android:textSize="15dp"
+            android:inputType="textEmailAddress" />
+
+        <com.example.storryapp.view.costumview.PasswordEditText
+            android:id="@+id/et_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:alpha="0"
+            android:layout_marginTop="16dp"
+            android:textSize="15dp"
+            android:hint="@string/input_password"
+            android:inputType="textPassword" />
+
+        <com.example.storryapp.view.costumview.ButtonRegister
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:text="@string/signup"
+            android:alpha="0"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp" />
+
+        <TextView
+            android:id="@+id/et_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:alpha="0"
+            android:layout_marginTop="10dp"
+            android:text="@string/have_account"
+            android:textColor="@color/blue_700"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>
